@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Workshop_Faq extension
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category  Workshop
+ * @package   Workshop_Faq
+ * @copyright Copyright (c) 2017
+ * @license   http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Workshop\Faq\Api\FaqRepositoryInterface" type="Workshop\Faq\Model\FaqRepository" />
+    <preference for="Workshop\Faq\Api\Data\FaqInterface" type="Workshop\Faq\Model\Faq" />
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="workshop_faq_faq_listing_data_source" xsi:type="string">Workshop\Faq\Model\ResourceModel\Faq\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Workshop\Faq\Model\ResourceModel\Faq\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">workshop_faq_faq</argument>
+            <argument name="eventPrefix" xsi:type="string">workshop_faq_faq_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">faq_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Workshop\Faq\Model\ResourceModel\Faq</argument>
+        </arguments>
+    </type>
+
+    <type name="Workshop\Faq\Model\Output">
+        <arguments>
+            <argument name="templateProcessor" xsi:type="object">Magento\Widget\Model\Template\Filter</argument>
+        </arguments>
+    </type>
+
+    <virtualType name="WorkshopFaqModelFaqSourceIsActive" type="Workshop\Faq\Model\Source\Options">
+        <arguments>
+            <argument name="options" xsi:type="array">
+                <item name="1" xsi:type="array">
+                    <item name="value" xsi:type="const">Workshop\Faq\Model\Faq::STATUS_ENABLED</item>
+                    <item name="label" xsi:type="string" translate="true">Yes</item>
+                </item>
+                <item name="2" xsi:type="array">
+                    <item name="value" xsi:type="const">Workshop\Faq\Model\Faq::STATUS_DISABLED</item>
+                    <item name="label" xsi:type="string" translate="true">No</item>
+                </item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>

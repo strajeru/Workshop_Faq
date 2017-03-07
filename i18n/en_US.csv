@@ -1,0 +1,47 @@
+Back,Back
+"Delete FAQ","Delete FAQ"
+"Are you sure you want to do this?","Are you sure you want to do this?"
+Reset,Reset
+"Save FAQ","Save FAQ"
+"Save and Continue Edit","Save and Continue Edit"
+"The FAQ has been deleted.","The FAQ has been deleted."
+"The FAQ no longer exists.","The FAQ no longer exists."
+"There was a problem deleting the FAQ","There was a problem deleting the FAQ"
+"We can't find a FAQ to delete.","We can't find a FAQ to delete."
+FAQs,FAQs
+"New FAQ","New FAQ"
+"Edit FAQ","Edit FAQ"
+"Please correct the data sent.","Please correct the data sent."
+"Something went wrong while saving the FAQ.","Something went wrong while saving the FAQ."
+"You saved the FAQ","You saved the FAQ"
+"There was a problem saving the {{EntityLabelEscaped}]","There was a problem saving the {{EntityLabelEscaped}]"
+Home,Home
+"Could not save the FAQ: %1","Could not save the FAQ: %1"
+"Requested FAQ doesn't exist","Requested FAQ doesn't exist"
+"Unable to remove FAQ %1","Unable to remove FAQ %1"
+label,label
+Edit,Edit
+Delete,Delete
+"Delete ""${ $.$data.question }""","Delete ""${ $.$data.question }"""
+"Are you sure you wan't to delete the FAQ ""${ $.$data.question }"" ?","Are you sure you wan't to delete the FAQ ""${ $.$data.question }"" ?"
+"There are no FAQs at this moment","There are no FAQs at this moment"
+Answer,Answer
+"A total of %1 record(s) have been deleted.","A total of %1 record(s) have been deleted."
+"An error occurred while deleting record(s).","An error occurred while deleting record(s)."
+"A total of %1 FAQs have been disabled.","A total of %1 FAQs have been disabled."
+"An error occurred while disabling FAQs.","An error occurred while disabling FAQs."
+"A total of %1 FAQs have been enabled.","A total of %1 FAQs have been enabled."
+"An error occurred while enabling FAQs.","An error occurred while enabling FAQs."
+Yes,Yes
+No,No
+"Faq Information","Faq Information"
+"Is active","Is active"
+Question,Question
+"Sort Order","Sort Order"
+"Add New FAQ","Add New FAQ"
+"Delete items","Delete items"
+"Are you sure you wan't to delete selected items?","Are you sure you wan't to delete selected items?"
+ID,ID
+"Is Active","Is Active"
+Created,Created
+Modified,Modified

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Workshop_Faq extension
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ * 
+ * @category  Workshop
+ * @package   Workshop_Faq
+ * @copyright Copyright (c) 2017
+ * @license   http://opensource.org/licenses/mit-license.php MIT License
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Workshop_Faq::faq"
+             title="FAQs"
+             module="Workshop_Faq"
+             sortOrder="60"
+             resource="Workshop_Faq::faq"
+             parent="Magento_Backend::content_elements"
+             translate="title tooltip"
+             toolTip="FAQ management" />
+
+        <add id="Workshop_Faq::faq_faq"
+             title="FAQs"
+             module="Workshop_Faq"
+             sortOrder="10"
+             action="workshop_faq/faq"
+             resource="Workshop_Faq::faq_faq"
+             parent="Workshop_Faq::faq" translate="title"/>
+    </menu>
+</config>
