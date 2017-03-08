@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "require": {
-    "magento/framework": "100.1.*"
+    "magento/framework": "100.1.*",
+    "magento/module-ui": "100.1.*",
+    "magento/module-widget": "100.1.*"
   },
   "type": "magento2-module",
   "repositories": [

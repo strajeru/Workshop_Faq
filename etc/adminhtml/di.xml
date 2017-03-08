@@ -31,13 +31,13 @@
             <argument name="pool" xsi:type="object">WorkshopFaqUiDataProviderFaqFormModifierPool</argument>
         </arguments>
     </type>
-    <type name="Workshop\Faq\Controller\Adminhtml\Author\MassDelete">
+    <type name="Workshop\Faq\Controller\Adminhtml\Faq\MassDelete">
         <arguments>
             <argument name="successMessage" xsi:type="string" translate="true">A total of %1 record(s) have been deleted.</argument>
             <argument name="errorMessage" xsi:type="string" translate="true">An error occurred while deleting record(s).</argument>
         </arguments>
     </type>
-    <type name="Sample\News\Controller\Adminhtml\Faq\MassDisable">
+    <type name="Workshop\Faq\Controller\Adminhtml\Faq\MassDisable">
         <arguments>
             <argument name="successMessage" xsi:type="string" translate="true">A total of %1 FAQs have been disabled.</argument>
             <argument name="errorMessage" xsi:type="string" translate="true">An error occurred while disabling FAQs.</argument>
