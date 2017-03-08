@@ -7,5 +7,5 @@ __How to install__
 From magento 2 console run: 
 
  - `composer config repositories.strajeru-workshop-faq git git@github.com:strajeru/Workshop_Faq.git`  
- - `sudo composer require strajeru/workshop-faq:dev-master`  
+ - `composer require strajeru/workshop-faq:dev-master`  
  - `php bin/magento setup:upgrade`
